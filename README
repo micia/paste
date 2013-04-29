@@ -1,0 +1,11 @@
+paste - a simple and minimal POSIX paste(1) implementation.
+=============================================================
+
+This is a simple, uncomplicated and straightforward standalone
+implementation of the standard paste(1) shell utility.
+Useful in environments in which you do not have the full
+fledged GNU coreutils or an equivalent alternative, but you
+still want the paste(1) command.
+It is not by any mean the best(TM), most efficient or
+the fastest implementation around, but it aims to be at
+least standard, secure, minimal and... simple.
