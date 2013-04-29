@@ -52,7 +52,7 @@ main(int argc, char **argv) {
 	if(argc == 0)
 		eusage();
 	
-	/* populate delimeters */
+	/* populate delimiters */
 	if(!adelim)
 		adelim = "\t";
 	
@@ -232,7 +232,7 @@ parallel(Fdescr *dsc, int len, const wchar_t *delim, size_t cnt) {
 				}
 				
 				if(o != WEOF) {
-					/* pad with delimeters up to this point */
+					/* pad with delimiters up to this point */
 					while(++last < i) {
 						if(d != '\0')
 							out(d);
