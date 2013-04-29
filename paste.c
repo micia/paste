@@ -24,7 +24,7 @@ static void parallel(Fdescr *, int, const wchar_t *, size_t);
 
 int
 main(int argc, char **argv) {
-	const char *adelim = NULL;
+	const char *adelim = "\t";
 	bool seq = false;
 	wchar_t *delim;
 	size_t len;
@@ -53,9 +53,6 @@ main(int argc, char **argv) {
 		eusage();
 	
 	/* populate delimiters */
-	if(!adelim)
-		adelim = "\t";
-	
 	len = mbstowcs(NULL, adelim, 0);
 	if(len == (size_t)-1)
 		eprintf("invalid delimiter\n");
